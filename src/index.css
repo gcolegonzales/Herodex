@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  min-height: 100vh;
+  background-color: #E7E7E7;
+  margin: auto
+}
+
+.header {
+  max-width: 80vw;
+  min-height: 30vh;
+  background-color: #E70000;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-section {
+  margin: auto;
+  max-width: 50vw;
+  max-height: 10vh;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.input-section-searchbar {
+  min-width: 35vw;
+  min-height: 6vh;
+}
+
+::placeholder {
+  font-size: 24px;
+}
+
+.input-section-dropdown {
+  text-decoration: none;
+  height: 7vh;
+} 
