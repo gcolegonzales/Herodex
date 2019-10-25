@@ -10,8 +10,13 @@ function App(props) {
     <div className="App">
       <div className="header">
         <SearchForm />
-        {props.inputValue}
       </div>
+      {props.inputValue !== '' && (
+          <div>
+            <h1>{props.inputValue}</h1>
+          </div>
+        )}
+
     </div>
   );
 }

@@ -1,5 +1,5 @@
 const initialState = {
-    inputValue: 'Hello World',
+    inputValue: '',
     type: ["Marvel", "DC", "Hero", "Villain"],
     isLoading: false,
     response: {}

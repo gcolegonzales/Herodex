@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
+import { submitInput } from '../actions/submit';
 
 function SearchForm(props) {
-    // const [ inputValue, setInputValue ] = useState('');
+    const [ searchValue, setSearchValue ] = useState('');
 
     const handleChange = e => {
         e.preventDefault();
-        // setInputValue(e.target.value);
+        setSearchValue(e.target.value);
     }
 
     const handleSubmit = e => {
         e.preventDefault();
+        console.log('Submitted!')
+        props.submitInput(searchValue);
         
     }
 
@@ -32,22 +35,18 @@ function SearchForm(props) {
             <button className='input-section-submit'>
                 Search
             </button>
-
-            <br/>
-            {props.inputValue}
         </form>
     )
 }
 
 function mapStateToProps(state) {
-    console.log(state)
     return {
         inputValue: state.search.inputValue
     }
 }
 
 const mapDispatchToProps = {
-    
+    submitInput
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);
