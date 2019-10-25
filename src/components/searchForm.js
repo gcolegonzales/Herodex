@@ -18,24 +18,28 @@ function SearchForm(props) {
     }
 
     return (
-        <form className='input-section' onSubmit={handleSubmit}>
-            <input
-            className='input-section-searchbar' 
-            placeholder='Search any Hero/Villain'
-            onChange={handleChange}
-            />
+        <div className='input-section-wrapper'>
+            <form className='input-section' onSubmit={handleSubmit}>
+                <input
+                className='input-section-searchbar' 
+                placeholder='Search any Hero/Villain'
+                onChange={handleChange}
+                />
 
-            <select className='input-section-dropdown'>
-                <option>Marvel</option>
-                <option>DC</option>
-                <option>Hero</option>
-                <option>Villain</option>
-            </select>
+                <select className='input-section-dropdown'>
+                    <option>All</option>
+                    <option>Marvel</option>
+                    <option>DC</option>
+                    <option>Hero</option>
+                    <option>Villain</option>
+                </select>
 
-            <button className='input-section-submit'>
-                Search
-            </button>
-        </form>
+                <button className='input-section-submit'>
+                    Search
+                </button>
+            </form>
+            <span className='brand-name'>HERODEX</span>
+        </div>
     )
 }
 

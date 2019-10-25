@@ -20,3 +20,80 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+.App {
+  min-height: 100vh;
+  background-color: #E7E7E7;
+  margin: auto;
+}
+
+.header {
+  max-width: 80vw;
+  min-height: 30vh;
+  background-color: #E70000;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-section-wrapper {
+  margin: auto;
+}
+
+.brand-name {
+  font-size: 4.5rem;
+  color: #E7E7E7;
+  font-style: italic;
+  font-family: 'Anton', sans-serif;
+  position: relative;
+  top: 4vh;
+}
+
+.input-section {
+  margin: auto;
+  max-width: 50vw;
+  max-height: 10vh;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-section-searchbar {
+  min-width: 35vw;
+  min-height: 6vh;
+  padding-left: 2vw;
+  border: 3px solid white;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 24px;
+}
+
+.input-section-searchbar:focus {
+  outline: none;
+}
+
+.input-section-submit:focus {
+  outline: none;
+}
+
+.brand-name {
+  font-family: 'Anton', sans-serif;
+}
+
+.input-section-searchbar:active {
+  
+}
+
+::placeholder {
+  font-size: 24px;
+}
+
+.input-section-dropdown {
+  text-decoration: none;
+  height: 7vh;
+  border-radius: 0px 0px 0px 0px;
+} 
+
+.input-section-submit {
+  border-radius: 0px 20px 20px 0px;
+}
