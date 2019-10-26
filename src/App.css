@@ -97,3 +97,16 @@
 .input-section-submit {
   border-radius: 0px 20px 20px 0px;
 }
+
+.hero-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hero-card {
+  margin: 5vh 0vh 5vh 0vh;
+  border: 2px solid black;
+  border-style: inset;
+  background-color: white;
+}

@@ -1,8 +1,7 @@
 const initialState = {
     inputValue: '',
-    type: ["Marvel", "DC", "Hero", "Villain"],
     isLoading: false,
-    response: {}
+    response: []
 }
 
 export function searchReducer (state = initialState, action) {
@@ -16,9 +15,7 @@ export function searchReducer (state = initialState, action) {
         case 'HERO_FOUND':
             return {
                 ...state,
-                response: {
-                    ...state.response // Point this to endpoint
-                }
+                response: action.payload// Point this to endpoint
             }
         
         case 'SUBMIT':

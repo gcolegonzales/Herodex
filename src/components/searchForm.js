@@ -26,14 +26,6 @@ function SearchForm(props) {
                 onChange={handleChange}
                 />
 
-                <select className='input-section-dropdown'>
-                    <option>All</option>
-                    <option>Marvel</option>
-                    <option>DC</option>
-                    <option>Hero</option>
-                    <option>Villain</option>
-                </select>
-
                 <button className='input-section-submit'>
                     Search
                 </button>

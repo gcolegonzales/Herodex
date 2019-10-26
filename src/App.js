@@ -4,6 +4,7 @@ import './App.css';
 
 // Components
 import SearchForm from './components/searchForm';
+import HeroList from './components/HeroList';
 
 function App(props) {
   return (
@@ -11,11 +12,14 @@ function App(props) {
       <div className="header">
         <SearchForm />
       </div>
-      {props.inputValue !== '' && (
+
+      {/* {props.inputValue !== '' && (
           <div>
             <h1>{props.inputValue}</h1>
           </div>
-        )}
+        )} */}
+
+      <HeroList />
 
     </div>
   );
