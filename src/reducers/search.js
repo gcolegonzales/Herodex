@@ -1,7 +1,8 @@
 const initialState = {
     inputValue: '',
     isLoading: false,
-    response: []
+    response: [],
+    currentHero: {}
 }
 
 export function searchReducer (state = initialState, action) {
@@ -22,6 +23,12 @@ export function searchReducer (state = initialState, action) {
             return {
                 ...state,
                 inputValue: action.payload
+            }
+
+        case 'LOAD_HERO':
+            return {
+                ...state,
+                currentHero: action.payload
             }
 
         default: 
